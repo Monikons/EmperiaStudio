@@ -1,0 +1,323 @@
+/* Общий стиль для всех страниц */
+body {
+    background: #0e0e12;
+    color: #eaeaea;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Шапка */
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(20, 20, 30, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;  /* Изменили цвет на белый */
+}
+
+nav a {
+    color: #eaeaea;
+    margin-left: 30px;
+    text-decoration: none;
+    position: relative;
+}
+
+
+/* Герой-блок */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #7c3aed, #6366f1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #c2c2c2;
+}
+
+/* Карточки общего назначения */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.1);
+}
+
+.card h3 {
+    color: #eaeaea;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #c2c2c2;
+    font-size: 0.95rem;
+}
+
+.card:hover {
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
+    transform: translateY(-5px);
+}
+
+/* Блок "Почему выбирают нас" */
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.why-choose-us li {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.1);
+}
+
+.why-choose-us li:hover {
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
+    transform: translateY(-5px);
+}
+
+/* Кнопка */
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #7c3aed, #6366f1);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+}
+
+/* Оформление "О нас" */
+.about-intro-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.1);
+    transition: 0.3s ease;
+}
+
+.about-intro-card h2 {
+    font-size: 2rem;
+    color: #eaeaea;
+    margin-bottom: 10px;
+}
+
+.about-intro-card p {
+    font-size: 1.1rem;
+    color: #c2c2c2;
+}
+
+.about-intro-card:hover {
+    box-shadow: 0 0 35px rgba(124, 58, 237, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Ценности в "О нас" */
+.about-values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px auto;
+    padding: 0 20px;
+    max-width: 1000px;
+}
+
+.value-card {
+    flex: 1 1 280px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    color: #eaeaea;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.1);
+}
+
+.value-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #7c3aed;
+}
+
+.value-card p {
+    font-size: 1rem;
+    color: #c2c2c2;
+}
+
+.value-card:hover {
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
+    transform: translateY(-5px);
+}
+
+/* Аккордеон для "о нас" и "прайс" */
+.accordion-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.accordion-item {
+    background: rgba(255, 255, 255, 0.02);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    border-radius: 12px;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 20px;
+    color: #eaeaea;
+}
+
+.accordion-toggle {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.accordion-toggle:hover {
+    opacity: 1;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ccc;
+}
+
+.accordion-item.open .accordion-content {
+    display: block;
+}
+
+.accordion-toggle.open {
+    transform: rotate(180deg);
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+/* Измененные стили для FAQ */
+.faq-accordion {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Стили для каждого вопроса */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+/* Вопросы теперь будут в цветах сайта */
+.faq-question {
+    background-color: rgba(124, 58, 237, 0.1); /* Плавный переход от основного цвета */
+    color: #eaeaea;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ответы */
+.faq-answer {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.05); /* Легкий оттенок для фона */
+    color: #c2c2c2;
+    border-radius: 5px;
+    display: none;
+    font-size: 16px;
+}
+
+/* Стили при активации вопроса */
+.faq-question.active {
+    background-color: rgba(124, 58, 237, 0.2); /* Темнее для активного состояния */
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+/* Добавим плавный переход при наведении */
+.faq-question:hover {
+    background-color: rgba(124, 58, 237, 0.15); /* Легкое затемнение при наведении */
+}
+
+/* Убираем слишком яркий цвет для кнопок и делаем их более гармоничными */
+.faq-question {
+    border: 1px solid rgba(124, 58, 237, 0.3); /* Легкая граница для вопросов */
+}
+
+/* Мелкие улучшения */
+.faq-answer p {
+    font-size: 1rem; /* Уменьшаем шрифт для ответов */
+}
